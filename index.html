@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate Search</title>
+    <link
+      href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css"
+      rel="stylesheet"
+    />
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+      integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto py-10">
+      <h1 class="text-3xl font-bold mb-6 text-center">
+        ระบบค้นหาใบเกียรติบัตร
+      </h1>
+      <div class="overflow-x-auto">
+        <table id="data-table" class="bg-white border border-gray-300">
+          <thead>
+            <tr>
+              <th class="py-2 px-4 border-b-2 border-gray-300 w-20">เลขที่</th>
+              <th class="py-2 px-4 border-b-2 border-gray-300">ชื่อ - สกุล</th>
+              <th class="py-2 px-4 border-b-2 border-gray-300">หลักสูตร</th>
+              <th class="py-2 px-4 border-b-2 border-gray-300">วันเริ่มอบรม</th>
+              <th class="py-2 px-4 border-b-2 border-gray-300">
+                วันสิ้นสุดอบรม
+              </th>
+              <th class="py-2 px-4 border-b-2 border-gray-300">
+                รูปเกียรติบัตร
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data will be populated here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
