@@ -10,6 +10,14 @@ let table = new DataTable("#data-table", {
         "sSearch":       "ค้นหา:",
         "sUrl":          "",
     },
+    columnDefs: [
+        { "width": "6%", "targets": 0},
+        { "width": "15%", "targets": 1},
+        { "width": "38%", "targets": 2},
+        { "width": "6%", "targets": 3},
+        { "width": "6%", "targets": 4},
+        { "width": "6%", "targets": 5},
+    ]
 });
 
 fetch("data.csv")
